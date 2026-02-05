@@ -109,7 +109,7 @@ try:
              margin=dict(l=10, r=10, t=10, b=10)
         )
         
-        st.plotly_chart(fig_log, use_container_width=True)
+        st.plotly_chart(fig_log, width='stretch')
     
     with tab2:
         # Gráfico nominal
@@ -153,7 +153,7 @@ try:
             margin=dict(l=10, r=10, t=10, b=10)
         )
         
-        st.plotly_chart(fig_nominal, use_container_width=True)
+        st.plotly_chart(fig_nominal, width='stretch')
 
 except Exception as e:
     st.error(f"Error loading data: {str(e)}")
